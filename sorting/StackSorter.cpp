@@ -10,7 +10,7 @@ private:
             int current = s.top();
             s.pop();
 
-            while (!helper.empty() && helper.top() < current) {
+            while (!helper.empty() && helper.top() > current) {
                 int top = helper.top();
                 helper.pop();
                 s.push(top);
@@ -18,15 +18,16 @@ private:
 
             helper.push(current);
         }
+
+        while (!helper.empty()) {
+            s.push(helper.top());
+            helper.pop();
+        }
     }
 
 public:
     StackSorter(std::stack<int>& s) {
         sort(s);
-    }
-
-    std::stack<int> getSorted() { 
-        return helper; 
     }
 };
 
@@ -37,12 +38,11 @@ int main() {
     s.push(4); 
     s.push(2);
 
-    StackSorter ss(s);
-    std::stack<int> result = ss.getSorted();
+    StackSorter sorter(s);
 
-    while (!result.empty()) {
-        std::cout << result.top() << " ";
-        result.pop();
+    while (!s.empty()) {
+        std::cout << s.top() << " ";
+        s.pop();
     }
     std::cout << std::endl;
 
