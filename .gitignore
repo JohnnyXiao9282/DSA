@@ -1,0 +1,18 @@
+# Compiled binaries (no extension, matches g++ output)
+*.o
+*.out
+*.exe
+*.dSYM/
+
+# Common binary output names produced by running the build task
+# (executable name = source file name, no extension)
+sorting/StackSorter
+linkedlist/MyLinkedList
+LRUCache
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/*
+!.vscode/tasks.json
