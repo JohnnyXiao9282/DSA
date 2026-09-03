@@ -1,19 +1,8 @@
 #include <iostream>
+#include "ListNode.h"
 
 class MyLinkedList {
 private:
-    struct ListNode {
-        int value;
-        ListNode* prev;
-        ListNode* next;
-
-        ListNode(int value) {
-            this->value = value;
-            this->prev = nullptr;
-            this->next = nullptr;
-        }
-    };
-
     ListNode* left;
     ListNode* right;
     int size;
