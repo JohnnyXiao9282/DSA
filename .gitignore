@@ -4,10 +4,14 @@
 *.exe
 *.dSYM/
 
-# Common binary output names produced by running the build task
-# (executable name = source file name, no extension)
+# Executables with no extension: match common source-name patterns
+# Anything with no dot in the filename inside these folders is a binary
 sorting/StackSorter
+sorting/QuickSort
+sorting/MergeSort
 linkedlist/MyLinkedList
+design/LRUCache
+dfs/BasicDFS
 LRUCache
 
 # macOS
