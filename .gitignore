@@ -1,18 +1,19 @@
-# Compiled binaries (no extension, matches g++ output)
+# Ignore everything by default, then explicitly allow source files and
+# directories. This way any compiled binary (no file extension) is
+# automatically ignored without needing to list it here by name.
+*
+!*/
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+!.gitignore
+
+# Extra safety net for known binary/debug artifacts
 *.o
 *.out
 *.exe
 *.dSYM/
-
-# Executables with no extension: match common source-name patterns
-# Anything with no dot in the filename inside these folders is a binary
-sorting/StackSorter
-sorting/QuickSort
-sorting/MergeSort
-linkedlist/MyLinkedList
-design/LRUCache
-dfs/BasicDFS
-LRUCache
 
 # macOS
 .DS_Store
