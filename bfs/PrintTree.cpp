@@ -1,20 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <algorithm>
-
-
-struct TreeNode {
-    int value;
-    TreeNode* left;
-    TreeNode* right;
-
-    TreeNode(int value) {
-        this->value = value;
-        this->left = nullptr;
-        this->right = nullptr;
-    }
-};
+#include "TreeNode.h"
 
 class BFS {
 public:
@@ -45,7 +32,30 @@ public:
             }
         }
 
-
         return result;
     }
 };
+
+int main() {
+    //        1
+    //       / \
+    //      2   3
+    //     / \   \
+    //    4   5   6
+    TreeNode* root = new TreeNode(1);
+    root->left = new TreeNode(2);
+    root->right = new TreeNode(3);
+    root->left->left = new TreeNode(4);
+    root->left->right = new TreeNode(5);
+    root->right->right = new TreeNode(6);
+
+    BFS bfs;
+    std::vector<int> result = bfs.printTree(root);
+
+    for (int n : result) {
+        std::cout << n << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
