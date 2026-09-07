@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ListNode.h"
+#include "../common/ListNode.h"
 
 ListNode* reverse(ListNode* head) {
     if (!head || !head->next) {

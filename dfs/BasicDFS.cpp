@@ -1,6 +1,6 @@
 #include <iostream>
 #include <unordered_set>
-#include "GraphNode.h"
+#include "../common/GraphNode.h"
 
 void dfs(GraphNode* node, std::unordered_set<GraphNode*>& visited) {
     // Base case: null or already visited

@@ -6,6 +6,7 @@ Each file is self-contained with a `main` function that demonstrates and tests t
 
 ## Structure
 
+- `common/` — shared data structure headers (`TreeNode.h`, `ListNode.h`, `GraphNode.h`, ect.) reused across folders
 - `design/` — design problems (e.g. LRU Cache)
 - `linkedlist/` — linked list implementations
 - `sorting/` — sorting algorithms (quick sort, merge sort, stack sorter, etc.)

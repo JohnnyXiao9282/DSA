@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ListNode.h"
+#include "../common/ListNode.h"
 
 class MyLinkedList {
 private:

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include "TreeNode.h"
+#include "../common/TreeNode.h"
 
 class BFS {
 public:
