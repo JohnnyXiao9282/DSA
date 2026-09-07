@@ -10,7 +10,7 @@ Each file is self-contained with a `main` function that demonstrates and tests t
 - `linkedlist/` — linked list implementations
 - `sorting/` — sorting algorithms (quick sort, merge sort, stack sorter, etc.)
 - `dfs/` — depth-first search examples
-- `BFS.cpp` — breadth-first search example
+- `bfs/` — breadth-first search examples (e.g. level-order tree traversal)
 
 ## Running
 
