@@ -1,15 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <unordered_set>
-
-struct GraphNode {
-    int value;
-    std::vector<GraphNode*> neighbors;
-
-    GraphNode(int value) {
-        this->value = value;
-    }
-};
+#include "GraphNode.h"
 
 void dfs(GraphNode* node, std::unordered_set<GraphNode*>& visited) {
     // Base case: null or already visited
